@@ -3,7 +3,7 @@
 enabled-by-default: true
 
 # If this is true, the plugin will not have any effect when
-# the player is in creative mode.
+# the player is in a gamemode other than survival.
 survival-only: true
 
 # If this is false, blocks broken with the plugin will not drop
