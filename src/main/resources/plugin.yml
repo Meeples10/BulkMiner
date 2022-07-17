@@ -1,0 +1,15 @@
+name: BulkMiner
+main: io.github.meeples10.bulkminer.Main
+version: %PROJECT_VERSION%
+author: Meeples10
+description: %PROJECT_DESCRIPTION%
+api-version: 1.19
+commands:
+  bulkminer:
+    description: Toggle bulk mining on or off for yourself
+    usage: /bulkminer
+    permission: bulkminer.use
+permissions:
+  bulkminer.use:
+    description: Allows players to use the plugin
+    default: true
