@@ -1,12 +1,12 @@
 # BulkMiner
 
-A plugin that allows players to main an entire vein of ore at once, inspired by the mod [VeinMiner](https://www.curseforge.com/minecraft/mc-mods/veinminer).
+A plugin that allows players to mine an entire vein of ore at once, inspired by the mod [VeinMiner](https://www.curseforge.com/minecraft/mc-mods/veinminer).
 
 ## Commands
 
 |Command|Description|Permission|
 |-------|-----------|----------|
-|`/bulkminer`|Allows players to enable or disable the effects of the plugin for themselves.|`bulkminer.use`|
+|`/bulkminer`|Allows players to toggle the effects of the plugin for themselves.|`bulkminer.use`|
 
 ## Configuration
 
