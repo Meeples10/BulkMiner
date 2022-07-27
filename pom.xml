@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.meeples10.bulkminer</groupId>
     <artifactId>BulkMiner</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <name>BulkMiner</name>
     <description>Adds the ability to main an entire vein of ore at once.</description>
     <build>
