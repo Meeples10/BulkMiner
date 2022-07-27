@@ -20,11 +20,12 @@ public class Miner {
     public static void mine(Block block, Player miner, int xp) {
         overflowDetector = Main.maxDistance * 5000;
         List<Block> list = new ArrayList<>();
-        findNeighbors(block, Main.maxDistance, list);
+        findNeighbors(block, Main.variantsAreSame ? Main.ORE_VARIANTS.get(block.getType()) : null, Main.maxDistance,
+                list);
         mineAll(list, block, miner, xp);
     }
 
-    private static void findNeighbors(Block block, int distance, List<Block> list) {
+    private static void findNeighbors(Block block, Material variant, int distance, List<Block> list) {
         if(distance == 0) return;
         overflowDetector--;
         if(overflowDetector <= 0) {
@@ -37,7 +38,9 @@ public class Miner {
                 for(int z = -1; z <= 1; z++) {
                     if(x == 0 && y == 0 && z == 0) continue;
                     Block b = block.getRelative(x, y, z);
-                    if(b.getType() == block.getType() && !list.contains(b)) findNeighbors(b, distance - 1, list);
+                    if((b.getType() == block.getType() || (variant != null && b.getType() == variant))
+                            && !list.contains(b))
+                        findNeighbors(b, variant, distance - 1, list);
                 }
             }
         }

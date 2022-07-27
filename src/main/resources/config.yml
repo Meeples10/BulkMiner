@@ -57,3 +57,7 @@ enabled-tools:
 - NETHERITE_PICKAXE
 - STONE_PICKAXE
 - WOODEN_PICKAXE
+
+# If this is true, the normal and deepslate variants of an ore are
+# considered by the plugin to be the same block.
+variants-are-same: true

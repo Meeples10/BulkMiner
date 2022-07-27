@@ -23,3 +23,4 @@ The default configuration file can be found [here](https://github.com/Meeples10/
 |`message-denied`|The message shown to the player if they do not have permission to use a command.|
 |`enabled-blocks`|Blocks listed here may be broken en masse using BulkMiner. [See here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html) for a list of supported block IDs. Generally, these IDs match Minecraft's block IDs, but in uppercase.|
 |`enabled-tools`|The plugin will only be triggered if the player is holding one of these items when breaking an enabled block. [See here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html) for a list of supported item IDs. Generally, these IDs match Minecraft's item IDs, but in uppercase.|
+|`variants-are-same`|If this is true, the normal and deepslate variants of an ore are considered by the plugin to be the same block.|
